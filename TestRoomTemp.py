@@ -52,7 +52,7 @@ except FileNotFoundError:
 # --- DYNAMICALLY FIND AVAILABLE TEMPERATURE COLUMNS ---
 all_possible_sensors = [
     'T01', 'T02', 'T03', 'T04', 'T05', 'T06', 'T07', 'T08',
-    'T09', 'T10', 'T11', 'T12', 'L-Env', 'R-Env'
+    'T09', 'T10', 'T11', 'T12'
 ]
 
 temperature_columns = []
