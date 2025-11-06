@@ -41,7 +41,7 @@ def adjust_color_brightness(hex_color, factor=0.4):
 
 # --- Fast Data Loading from Feather ---
 try:
-    df_original = pd.read_feather('cleaned_data.feather')
+    df_original = pd.read_parquet('cleaned_data.parquet')
     df_original.set_index('datetime', inplace=True)
 except FileNotFoundError:
     print("Error: 'cleaned_data.feather' not found.")
